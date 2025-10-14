@@ -1,0 +1,51 @@
+/*  Dark and light theme  */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1e1e1e;
+    --base-color: #1e1e1ea0;
+    --text-color: #f3f3f3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #f3f3f3;
+    --base-color: #f3f3f3a0;
+    --text-color: #1e1e1e;
+  }
+}
+
+:root {
+  --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
+  --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
+}
+
+body {
+  background: var(--background-color);
+  margin: 0px;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header {
+  margin: 100px 0;
+}
+
+.logo {
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 50px;
+}
