@@ -50,3 +50,52 @@ header {
   border-radius: 100%;
   margin-bottom: 50px;
 }
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-container {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background: var(--container-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--base-color);
+}
+
+.content-container h2 {
+  padding: 10px;
+}
+
+.button {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 35px 35px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+  grid-template-areas:
+  "title logo"
+  "description logo";
+}
+
+.button img {
+  top: 10px;
+  right: 10px;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
