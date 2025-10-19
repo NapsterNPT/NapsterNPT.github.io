@@ -45,6 +45,34 @@ header {
   margin: 100px 0;
 }
 
+.corner-1{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 2em;
+}
+
+.corner-2{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2em;
+}
+
+.corner-3{
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 2em;
+}
+
+.corner-4{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 2em;
+}
+
 .logo {
   height: 200px;
   border-radius: 100%;
@@ -62,8 +90,6 @@ header {
 .content-container {
   display: grid;
   gap: 20px;
-  width: 80%;
-  margin: 0 auto;
   background: var(--container-color);
   padding: 20px;
   border-radius: 20px;
