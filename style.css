@@ -45,29 +45,33 @@ header {
   margin: 100px 0;
 }
 
+footer {
+  margin-top: 500px;
+}
+
 .corner-1{
-  position: absolute;
+  position: fixed;
   top: 5px;
   left: 10px;
   font-size: 2em;
 }
 
 .corner-2{
-  position: absolute;
+  position: fixed;
   top: 5px;
   right: 10px;
   font-size: 2em;
 }
 
 .corner-3{
-  position: absolute;
+  position: fixed;
   bottom: 5px;
   left: 10px;
   font-size: 2em;
 }
 
 .corner-4{
-  position: absolute;
+  position: fixed;
   bottom: 5px;
   right: 10px;
   font-size: 2em;
@@ -125,3 +129,22 @@ header {
   border-radius: 20px;
   object-fit: contain;
 }
+
+
+/* Code */
+pre {
+  margin: 0 20px;
+  border-radius: 10px;
+  text-align: left;
+  background: var(--container-color);
+  color: #ffffff;
+  font-family: Consolas, monospace;
+  padding: 20px;
+}
+
+.keyword { color: #569cd6; }
+.type { color: #4ec9b0; }
+.string { color: #d69d85; }
+.comment { color: #cacaca80; font-style: italic; }
+.operator { color: #c586c0; }
+.func { color: #ff7085; }
