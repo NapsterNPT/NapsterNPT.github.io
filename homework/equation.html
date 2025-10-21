@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NapsterNPT's Website | Homework</title>
+
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+    <h2>Es del 21/10/2025</h2>
+    <h2>Risoluzione di equazioni secondo grado</h2>
+
+    <pre>
+<span class="comment">// Importing libs</span>
+<span class="keyword">#include</span> &lt;iostream&gt;
+<span class="keyword">#include</span> &lt;math.h&gt;
+
+<span class="keyword">using</span> <span class="keyword">namespace</span> std;
+
+<span class="comment">// Variables definition</span>
+<span class="type">int</span> a, b, c;
+<span class="type">float</span> x, x1, x2, delta;
+
+<span class="comment">// FUNCTION DEFINITION</span>
+
+<span class="comment">// Get coefficients</span>
+<span class="keyword">void</span> getCoef() {
+    cout &lt;&lt; <span class="string">"Inserisci il valore del primo coefficiente: "</span>;
+    cin &gt;&gt; a;
+    
+    cout &lt;&lt; <span class="string">"Inserisci il valore del secondo coefficiente: "</span>;
+    cin &gt;&gt; b;
+    
+    cout &lt;&lt; <span class="string">"Inserisci il valore del terzo coefficiente: "</span>;
+    cin &gt;&gt; c;
+}
+
+<span class="comment">// Calc Delta</span>
+<span class="keyword">void</span> calcDelta() {
+    delta = (b * b) - (4 * a * c); <span class="comment">// delta = pow(b,b) - (4*a*c)</span>
+}
+
+<span class="comment">// Print Solutions</span>
+<span class="keyword">void</span> printSol() {
+    <span class="keyword">if</span> (delta &lt; 0)
+        cout &lt;&lt; <span class="string">"\nL'equazione non ammette soluzioni reali 😔"</span>;
+    <span class="keyword">else</span> {
+        x1 = (-b - sqrt(delta)) / (2 * a);
+        x2 = (-b + sqrt(delta)) / (2 * a);
+
+        cout &lt;&lt; <span class="string">"\nL'equazione ha come soluzioni:\nx1: "</span> &lt;&lt; x1 &lt;&lt; <span class="string">"\nx2: "</span> &lt;&lt; x2;
+    }
+}
+
+<span class="comment">// First equation</span>
+<span class="keyword">void</span> firstEq() {
+    <span class="keyword">if</span> ((b == 0) &amp;&amp; (c == 0))
+        cout &lt;&lt; <span class="string">"\nL'equazione è indeterminata 😔"</span>;
+    <span class="keyword">else if</span> (b == 0)
+        cout &lt;&lt; <span class="string">"\nL'equazione è impossibile 😔"</span>;
+    <span class="keyword">else</span> {
+        x = <span class="type">float</span>(-c) / <span class="type">float</span>(b);
+        cout &lt;&lt; <span class="string">"\nL'equazione ha come soluzione:\nx: "</span> &lt;&lt; x;
+    }
+}
+
+<span class="comment">// MAIN</span>
+<span class="keyword">int</span> <span class="func">main</span>() {
+    getCoef();
+
+    <span class="keyword">if</span> (a != 0) {
+        calcDelta();
+        printSol();
+    } <span class="keyword">else</span> firstEq();
+
+    <span class="keyword">return</span> 0;
+}
+</pre>
+
+</body>
+
+</html>
