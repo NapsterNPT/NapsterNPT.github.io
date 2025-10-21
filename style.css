@@ -133,7 +133,7 @@ footer {
 
 /* Code */
 pre {
-  margin: 0 20px;
+  margin: 20px;
   border-radius: 10px;
   text-align: left;
   background: var(--container-color);
@@ -143,8 +143,7 @@ pre {
 }
 
 .keyword { color: #569cd6; }
-.type { color: #4ec9b0; }
-.string { color: #d69d85; }
+.type { color: #a1ffe0; }
+.string { color: #ffeda1; }
 .comment { color: #cacaca80; font-style: italic; }
-.operator { color: #c586c0; }
 .func { color: #ff7085; }
