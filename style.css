@@ -1,5 +1,4 @@
 /*  Dark and light theme  */
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1e1e1e;
@@ -16,6 +15,15 @@
   }
 }
 
+
+/*  Fonts  */
+@font-face {
+  font-family: 'Lexend';
+  src: url('assets/Lexend.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 :root {
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
   --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
@@ -25,7 +33,7 @@ body {
   margin: 0px;
   text-align: center;
   background: var(--background-color);
-  font-family: Tahoma;
+  font-family: 'Lexend';
 }
 
 h1,
@@ -39,6 +47,10 @@ a {
   margin: 0px;
   color: var(--text-color);
   text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
 }
 
 header {
@@ -161,7 +173,7 @@ footer {
   backdrop-filter: blur(10px);
 }
 
-.code button svg{
+.copy svg{
   margin-right: 10px;
 }
 
