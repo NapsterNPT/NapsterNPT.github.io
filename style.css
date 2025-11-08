@@ -25,7 +25,7 @@
 }
 
 :root {
-  --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
+  --container-color: oklch(from var(--background-color) calc(l * 1.2) c h / 0.75);
   --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
 }
 
@@ -34,6 +34,13 @@ body {
   text-align: center;
   background: var(--background-color);
   font-family: 'Lexend';
+}
+
+.body-background{
+  background-image: url("assets/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -83,6 +90,7 @@ footer {
   background: var(--container-color);
   border-radius: 20px;
   box-shadow: 0 0 20px var(--base-color);
+  backdrop-filter: blur(5px);
 }
 
 .content-container h2 {
@@ -102,7 +110,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
 }
 
 .button img {
