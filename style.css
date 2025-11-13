@@ -2,15 +2,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1e1e1e;
-    --base-color: #1e1e1ea0;
     --text-color: #f3f3f3;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #f3f3f3;
-    --base-color: #f3f3f3a0;
+    --background-color: #b4b4b4;
     --text-color: #1e1e1e;
   }
 }
@@ -26,7 +24,14 @@
 
 :root {
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h / 0.75);
-  --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
+  --second-text-color: oklch(from var(--text-color) calc(l / 1.1) c h);
+  --third-text-color: oklch(from var(--text-color) calc(l / 1.2) c h);
+
+  /*  Liquid glass variables  */
+  --liquid-glass-background: rgba(255, 255, 255, 0.1);
+  --liquid-glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --liquid-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --liquid-glass-blur: blur(5px);
 }
 
 body {
@@ -52,8 +57,28 @@ h6,
 p,
 a {
   margin: 0px;
-  color: var(--text-color);
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  color: var(--text-color);
+}
+
+h3,
+h4{
+  color: var(--second-text-color);
+}
+
+h5,
+h6,
+p,
+a {
+  color: var(--third-text-color);
 }
 
 strong {
@@ -75,22 +100,17 @@ footer {
   border-radius: 100%;
 }
 
+.description {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 .main-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
   gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.content-container {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-  background: var(--container-color);
-  border-radius: 20px;
-  box-shadow: 0 0 20px var(--base-color);
-  backdrop-filter: blur(5px);
 }
 
 .content-container h2 {
@@ -98,19 +118,20 @@ footer {
 }
 
 .button {
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: 35px 35px;
+  grid-template-rows: 4fr 1fr;
   grid-template-areas:
     "title logo"
     "description logo";
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
+  background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .button img {
@@ -119,6 +140,12 @@ footer {
   right: 10px;
   border-radius: 20px;
   object-fit: contain;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .exit-button {
@@ -129,11 +156,11 @@ footer {
   right: 10px;
   padding: 10px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
+  background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .exit-button svg{
@@ -176,11 +203,11 @@ footer {
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
+  background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .copy svg{
@@ -203,11 +230,11 @@ footer {
   padding: 30px;
   box-sizing: border-box;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
+  background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .home-button p{
