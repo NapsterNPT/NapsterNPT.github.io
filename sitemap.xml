@@ -13,31 +13,3 @@
     <priority>0.80</priority>
   </url>
 </urlset>
-
-    Vai al Report Sitemap
-
-        Nel menu laterale a sinistra, cerca e clicca su Indicizzazione > Sitemap.
-
-    Invia il Sitemap
-
-        Nella sezione "Aggiungi una nuova sitemap", inserisci il percorso del file.
-
-        Se il tuo URL è https://tuosito.com/sitemap.xml, devi inserire solo la parte finale: sitemap.xml (il nome del dominio è già precompilato).
-
-        Clicca su Invia.
-
-    Verifica lo Stato
-
-        Dopo l'invio, vedrai il file nella sezione "Sitemap inviate".
-
-        Googlebot inizierà a elaborarlo. Controlla la colonna Stato: se lo stato è "Riuscita" significa che Google l'ha letto correttamente. In caso di errori, espandi la riga per visualizzare i dettagli e correggere eventuali problemi di formato o URL.
-
-Vantaggi del Sitemap
-
-    Scansione Migliore: Aiuta Google a scoprire rapidamente tutte le pagine importanti, specialmente sui siti nuovi o grandi.
-
-    Contenuti Orfani: Garantisce che Google trovi le pagine che potrebbero non essere collegate internamente (pagine "orfane").
-
-    Informazioni Aggiuntive: Puoi fornire a Google informazioni aggiuntive sulle pagine, come la data dell'ultima modifica (<lastmod>) e la frequenza di aggiornamento (<changefreq>).
-
-Per un tutorial pratico su come inviare il file in Search Console, puoi guardare Come inviare una Sitemap a Google Search Console in 3 passaggi. Questo video mostra la procedura su Google Search Console, che è il modo principale per "usare" la sitemap.
