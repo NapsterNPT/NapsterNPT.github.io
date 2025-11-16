@@ -26,9 +26,12 @@
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h / 0.75);
   --second-text-color: oklch(from var(--text-color) calc(l / 1.1) c h);
   --third-text-color: oklch(from var(--text-color) calc(l / 1.2) c h);
+  --border-radius: 20px;
+  --second-border-radius: 10px;
 
   /*  Liquid glass variables  */
   --liquid-glass-background: rgba(255, 255, 255, 0.1);
+  --liquid-glass-background-dark: rgba(10, 10, 10, 0.1);
   --liquid-glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --liquid-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   --liquid-glass-blur: blur(5px);
@@ -42,7 +45,7 @@ body {
 }
 
 .body-background{
-  background-image: url("assets/Background.jpg");
+  /*background-image: url("assets/Background.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,6 +88,10 @@ strong {
   font-weight: bold;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   margin: 100px 0;
 }
@@ -117,33 +124,39 @@ footer {
   padding: 10px;
 }
 
-.button {
+.button-container {
+  position: relative;
   margin: 0 auto;
+}
+
+.button {
   display: grid;
-  grid-template-rows: 4fr 1fr;
   grid-template-areas:
-    "title logo"
-    "description logo";
-  gap: 10px;
+    "title"
+    "description";
+  gap: 5px;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: var(--border-radius) var(--border-radius) 0px var(--border-radius);
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
-.button img {
-  height: 100%;
-  top: 10px;
-  right: 10px;
-  border-radius: 20px;
-  object-fit: contain;
+.button p {
+  align-self: center;
+}
+
+.button-icon {
+  right: 0px;
+  position: absolute;
+  width: 100px;
   box-sizing: border-box;
-  border-radius: 20px;
-  background: var(--liquid-glass-background);
+  border-radius: 0px 0px var(--second-border-radius) var(--second-border-radius);
+  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
+  border-top: 0px;
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -156,7 +169,7 @@ footer {
   right: 10px;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
@@ -175,7 +188,7 @@ footer {
   padding: 20px;
   text-align: left;
   background: var(--container-color);
-  border-radius: 10px;
+  border-radius: var(--second-border-radius);
 }
 
 .code {
@@ -203,7 +216,7 @@ footer {
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
@@ -230,7 +243,7 @@ footer {
   padding: 30px;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
