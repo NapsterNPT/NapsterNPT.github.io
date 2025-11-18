@@ -139,6 +139,7 @@ footer {
 .button-container {
   position: relative;
   margin: 0 auto;
+  padding-left: 40px;
 }
 
 .button {
@@ -149,7 +150,7 @@ footer {
   gap: 5px;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: var(--border-radius) var(--border-radius) 0px var(--border-radius);
+  border-radius: 0px var(--border-radius) 0px 0px;
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
@@ -158,6 +159,22 @@ footer {
 
 .button p {
   align-self: center;
+}
+
+.button-open-new {
+  align-content: center;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  box-sizing: border-box;
+  border-radius: var(--border-radius) 0px 0px var(--border-radius);
+  background: var(--liquid-glass-background-dark);
+  border: var(--liquid-glass-border);
+  border-right: 0px;
+  box-shadow: var(--liquid-glass-shadow);
+  backdrop-filter: var(--liquid-glass-blur);
 }
 
 .button-icon {
