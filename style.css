@@ -175,6 +175,7 @@ footer {
   border-right: 0px;
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
+  z-index: -1;
 }
 
 .button-icon {
@@ -188,6 +189,7 @@ footer {
   border-top: 0px;
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
+  z-index: -1;
 }
 
 .exit-button {
