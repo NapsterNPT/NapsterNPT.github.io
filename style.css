@@ -156,8 +156,8 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 0 var(--border-radius) 0 0;
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -167,30 +167,30 @@ footer {
 }
 
 .button-open-new {
-  position: absolute;
+  align-content: center;
   top: 0;
   left: 0;
-
+  position: absolute;
   height: 100%;
   width: 40px;
   box-sizing: border-box;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
+  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
   border-right: 0;
-  background: var(--liquid-glass-background-dark);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
 .button-icon {
-  position: absolute;
   right: 0;
+  position: absolute;
   width: 100px;
   box-sizing: border-box;
   border-radius: 0 0 var(--second-border-radius) var(--second-border-radius);
+  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
   border-top: 0;
-  background: var(--liquid-glass-background-dark);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -199,17 +199,18 @@ footer {
   background-color: var(--accent-color);
 }
 
+
 .exit-button {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
   display: flex;
   align-items: center;
+  bottom: 10px;
+  right: 10px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: var(--border-radius);
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -223,13 +224,13 @@ footer {
 .second-container {
   margin: 100px;
   padding: 20px;
-  border-radius: var(--border-radius);
   background: var(--container-color);
+  border-radius: var(--border-radius);
 }
 
 .section-title {
-  margin-bottom: 50px;
   font-size: 2rem;
+  margin-bottom: 50px;
 }
 
 .card-container {
@@ -239,14 +240,14 @@ footer {
   margin: 50px 0;
   box-sizing: border-box;
   border-radius: var(--border-radius);
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
 .card-button {
-  width: calc(100% - 180px);
+  width: calc(100% - 180px);                        /* 160 = ((button width + button margin right) * 2) - card button side padding*/
   min-width: min-content;
   padding: 20px;
   text-align: left;
@@ -256,13 +257,13 @@ footer {
   position: relative;
   margin: 20px;
   margin-left: 0;
-  min-width: 50px;
-  min-height: 50px;
   align-content: center;
+  min-height: 50px;
+  min-width: 50px;
   box-sizing: border-box;
   border-radius: var(--second-border-radius);
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background-dark);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -272,18 +273,18 @@ footer {
   margin: 100px;
   padding: 20px;
   text-align: left;
-  border-radius: var(--second-border-radius);
   background: var(--container-color);
+  border-radius: var(--second-border-radius);
 }
 
 .code {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  margin: 0;
-  color: var(--text-color);
   white-space: pre-wrap;
   word-break: break-word;
+  margin: 0;
+  color: var(--text-color);
   font-family: Consolas, monospace;
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .copy {
@@ -293,17 +294,17 @@ footer {
   z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1;
+  justify-self: end;
+  align-self: start;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-self: end;
-  align-self: start;
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: var(--border-radius);
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -329,8 +330,8 @@ footer {
   box-sizing: border-box;
   cursor: pointer;
   border-radius: var(--border-radius);
-  border: var(--liquid-glass-border);
   background: var(--liquid-glass-background);
+  border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -340,6 +341,6 @@ footer {
 }
 
 .sad-face {
-  margin-bottom: 100px;
   font-size: 200px;
+  margin-bottom: 100px;
 }
