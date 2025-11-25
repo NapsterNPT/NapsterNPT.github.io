@@ -59,10 +59,10 @@ body {
 }
 
 .body-background {
-  /*background-image: url("assets/Background.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*background-image: url("assets/Background.jpg");*/
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -148,13 +148,13 @@ footer {
 }
 
 .button {
+  padding: 20px;
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "title"
     "description";
   gap: 5px;
-  padding: 20px;
-  box-sizing: border-box;
   border-radius: 0 var(--border-radius) 0 0;
   background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
@@ -167,13 +167,13 @@ footer {
 }
 
 .button-open-new {
-  align-content: center;
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
   height: 100%;
   width: 40px;
   box-sizing: border-box;
+  align-content: center;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
   background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
@@ -183,8 +183,8 @@ footer {
 }
 
 .button-icon {
-  right: 0;
   position: absolute;
+  right: 0;
   width: 100px;
   box-sizing: border-box;
   border-radius: 0 0 var(--second-border-radius) var(--second-border-radius);
@@ -202,10 +202,10 @@ footer {
 
 .exit-button {
   position: fixed;
-  display: flex;
-  align-items: center;
   bottom: 10px;
   right: 10px;
+  display: flex;
+  align-items: center;
   padding: 10px;
   box-sizing: border-box;
   border-radius: var(--border-radius);
@@ -247,10 +247,10 @@ footer {
 }
 
 .card-button {
-  width: calc(100% - 180px);                        /* 160 = ((button width + button margin right) * 2) - card button side padding*/
-  min-width: min-content;
   padding: 20px;
   text-align: left;
+  width: calc(100% - 180px);                        /* 160 = ((button width + button margin right) * 2) - card button side padding*/
+  min-width: min-content;
 }
 
 .card-button-extra {
@@ -292,8 +292,6 @@ footer {
   top: 10px;
   right: 10px;
   z-index: 1;
-  grid-column: 1 / -1;
-  grid-row: 1;
   justify-self: end;
   align-self: start;
   display: flex;
@@ -307,6 +305,8 @@ footer {
   border: var(--liquid-glass-border);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .copy svg {
