@@ -58,21 +58,14 @@ body {
   font-family: 'Lexend';
 }
 
-.body-background{
+.body-background {
   /*background-image: url("assets/Background.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   text-decoration: none;
 }
@@ -81,20 +74,15 @@ h1 {
   font-size: 3rem;
 }
 
-h1,
-h2 {
+h1, h2 {
   color: var(--text-color);
 }
 
-h3,
-h4{
+h3, h4 {
   color: var(--second-text-color);
 }
 
-h5,
-h6,
-p,
-a {
+h5, h6, p, a {
   color: var(--third-text-color);
 }
 
@@ -104,8 +92,8 @@ strong {
 
 abbr {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -123,7 +111,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.disabled{
+.disabled {
   cursor: not-allowed;
 }
 
@@ -168,8 +156,8 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 0 var(--border-radius) 0 0;
-  background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -179,30 +167,30 @@ footer {
 }
 
 .button-open-new {
-  align-content: center;
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
+
   height: 100%;
   width: 40px;
   box-sizing: border-box;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
-  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
   border-right: 0;
+  background: var(--liquid-glass-background-dark);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
 .button-icon {
-  right: 0;
   position: absolute;
+  right: 0;
   width: 100px;
   box-sizing: border-box;
   border-radius: 0 0 var(--second-border-radius) var(--second-border-radius);
-  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
   border-top: 0;
+  background: var(--liquid-glass-background-dark);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -211,23 +199,22 @@ footer {
   background-color: var(--accent-color);
 }
 
-
 .exit-button {
   position: fixed;
-  display: flex;
-  align-items: center;
   bottom: 10px;
   right: 10px;
+  display: flex;
+  align-items: center;
   padding: 10px;
   box-sizing: border-box;
   border-radius: var(--border-radius);
-  background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
-.exit-button svg{
+.exit-button svg {
   margin-right: 10px;
 }
 
@@ -236,13 +223,13 @@ footer {
 .second-container {
   margin: 100px;
   padding: 20px;
-  background: var(--container-color);
   border-radius: var(--border-radius);
+  background: var(--container-color);
 }
 
 .section-title {
-  font-size: 2rem;
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .card-container {
@@ -252,14 +239,14 @@ footer {
   margin: 50px 0;
   box-sizing: border-box;
   border-radius: var(--border-radius);
-  background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
 .card-button {
-  width: calc(100% - 180px);                        /* 160 = ((button width + button margin right) * 2) - card button side padding*/
+  width: calc(100% - 180px);
   min-width: min-content;
   padding: 20px;
   text-align: left;
@@ -269,13 +256,13 @@ footer {
   position: relative;
   margin: 20px;
   margin-left: 0;
-  align-content: center;
-  min-height: 50px;
   min-width: 50px;
+  min-height: 50px;
+  align-content: center;
   box-sizing: border-box;
   border-radius: var(--second-border-radius);
-  background: var(--liquid-glass-background-dark);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background-dark);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
@@ -285,18 +272,18 @@ footer {
   margin: 100px;
   padding: 20px;
   text-align: left;
-  background: var(--container-color);
   border-radius: var(--second-border-radius);
+  background: var(--container-color);
 }
 
 .code {
-  white-space: pre-wrap;
-  word-break: break-word;
-  margin: 0;
-  color: var(--text-color);
-  font-family: Consolas, monospace;
   grid-column: 1 / -1;
   grid-row: 1;
+  margin: 0;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Consolas, monospace;
 }
 
 .copy {
@@ -306,22 +293,22 @@ footer {
   z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1;
-  justify-self: end;
-  align-self: start;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-self: end;
+  align-self: start;
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: var(--border-radius);
-  background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
-.copy svg{
+.copy svg {
   margin-right: 10px;
 }
 
@@ -342,17 +329,17 @@ footer {
   box-sizing: border-box;
   cursor: pointer;
   border-radius: var(--border-radius);
-  background: var(--liquid-glass-background);
   border: var(--liquid-glass-border);
+  background: var(--liquid-glass-background);
   box-shadow: var(--liquid-glass-shadow);
   backdrop-filter: var(--liquid-glass-blur);
 }
 
-.home-button p{
+.home-button p {
   margin: 0 auto;
 }
 
 .sad-face {
-  font-size: 200px;
   margin-bottom: 100px;
+  font-size: 200px;
 }
