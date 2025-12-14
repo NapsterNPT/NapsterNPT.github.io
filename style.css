@@ -53,6 +53,7 @@
 
 * {
   box-sizing: border-box;
+  corner-shape: squircle;
 }
 
 body {
