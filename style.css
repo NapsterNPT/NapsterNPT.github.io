@@ -140,6 +140,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   gap: 50px;
+  margin-bottom: 100px;
 }
 
 .content-container h2 {
@@ -219,6 +220,12 @@ footer {
 .exit-button svg {
   margin-right: 10px;
 }
+
+/*  Minecraft section  */
+.minecraft-container {
+  padding: 50px 0;
+}
+
 
 
 /* Code */
