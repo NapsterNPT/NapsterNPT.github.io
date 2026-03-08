@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NapsterNPT's Website | Homeworks | Exam</title>
+    <title>NapsterNPT's Website | Homeworks | Coniche</title>
 
     <link rel="icon" type="image/png" href="../assets/logo.png" />
 
@@ -14,8 +14,8 @@
 
 <body>
     <header>
-        <h1>Es in preparazione verifica</h1>
-        <p>Data: 12/01/2026</p>
+        <h1>Analizzatore di coniche</h1>
+        <p>Data: 02/03/2026</p>
     </header>
 
     <a class="exit-button" href="index.html">
@@ -37,21 +37,44 @@
         </button>
 
         <pre id="code-block" class="code">
-<span class="comment">// Importing libs</span>
-<span class="keyword">#include</span> &lt;<span class="string">iostream</span>&gt;;
-<span class="keyword">#include</span> &lt;<span class="string">math.h</span>&gt;;
-
+<span class="keyword">#include</span> &lt;<span class="string">iostream</span>&gt;
 <span class="keyword">using</span> <span class="keyword">namespace</span> std;
 
-<span class="comment">// MAIN</span>
 <span class="keyword">int</span> <span class="func">main</span>() {
-    getCoef();
+    <span class="type">int</span> a, b, c, d, e;
+    cout &lt;&lt; <span class="string">"\n Analizzatore di coniche. v0.2 (ax^2 + by^2 + cx + dy + e = 0)\n\n"</span>;
+    cout &lt;&lt; <span class="string">"Inserisci il coefficiente di a: "</span>;
+    cin &gt;&gt; a;
+    cout &lt;&lt; <span class="string">"Inserisci il coefficiente di b: "</span>;
+    cin &gt;&gt; b;
+    cout &lt;&lt; <span class="string">"Inserisci il coefficiente di c: "</span>;
+    cin &gt;&gt; c;
+    cout &lt;&lt; <span class="string">"Inserisci il coefficiente di d: "</span>;
+    cin &gt;&gt; d;
+    cout &lt;&lt; <span class="string">"Inserisci il coefficiente di e: "</span>;
+    cin &gt;&gt; e;
 
-    <span class="keyword">if</span> (a != 0) {
-        calcDelta();
-        printSol();
-    } <span class="keyword">else</span> firstEq();
+    cout &lt;&lt; <span class="string">"\nFormula conica: "</span> &lt;&lt; a &lt;&lt; <span class="string">"x^2 + "</span> &lt;&lt; b &lt;&lt; <span class="string">"y^2 + "</span> &lt;&lt; c &lt;&lt; <span class="string">"x + "</span> &lt;&lt; d &lt;&lt; <span class="string">"y + "</span> &lt;&lt; e;
 
+    <span class="keyword">if</span> (a == 0 &amp;&amp; b == 0) {
+        <span class="type">double</span> m = -c / d;
+        <span class="type">double</span> q = -e / d;
+        cout &lt;&lt; <span class="string">"\n\nLa conica è una retta."</span>;
+        cout &lt;&lt; <span class="string">"\nLa formula esplicita della retta e': y = "</span> &lt;&lt; m &lt;&lt; <span class="string">"x + "</span> &lt;&lt; q;
+        cout &lt;&lt; <span class="string">"\nLa formula implicita della retta e': "</span> &lt;&lt; c &lt;&lt; <span class="string">"x + "</span> &lt;&lt; d &lt;&lt; <span class="string">"y + "</span> &lt;&lt; e;
+
+    } <span class="keyword">else if</span> (a != 0 &amp;&amp; b == 0) {
+        <span class="type">double</span> vx = -c / (2 * a);
+        <span class="type">double</span> vy = (c * c - 4 * a * e) / (4 * a * d);
+        <span class="type">double</span> fy = vy - d / (4 * a);
+        <span class="type">double</span> dir = vy + d / (4 * a);
+        cout &lt;&lt; <span class="string">"\nLa conica è una parabola."</span>;
+        cout &lt;&lt; <span class="string">"\nFormula esplicita: y = "</span> &lt;&lt; -a / d &lt;&lt; <span class="string">"x^2 + "</span> &lt;&lt; -c / d &lt;&lt; <span class="string">"x + "</span> &lt;&lt; -e / d;
+        cout &lt;&lt; <span class="string">"\nVertice: ("</span> &lt;&lt; vx &lt;&lt; <span class="string">"; "</span> &lt;&lt; vy &lt;&lt; <span class="string">")"</span>;
+        cout &lt;&lt; <span class="string">"\nFuoco: ("</span> &lt;&lt; vx &lt;&lt; <span class="string">"; "</span> &lt;&lt; fy &lt;&lt; <span class="string">")"</span>;
+        cout &lt;&lt; <span class="string">"\nDirettrice: y = "</span> &lt;&lt; dir;
+        cout &lt;&lt; <span class="string">"\nAsse di simmetria: x = "</span> &lt;&lt; vx &lt;&lt; <span class="string">"\n"</span>;
+    }
     <span class="keyword">return</span> 0;
 }
 </pre>
