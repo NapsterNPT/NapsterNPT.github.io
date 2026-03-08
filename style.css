@@ -253,6 +253,10 @@ footer {
   backdrop-filter: var(--liquid-glass-blur);
 }
 
+.card-image  {
+  margin-right: 10px;
+}
+
 .card-button {
   padding: 20px;
   text-align: left;
