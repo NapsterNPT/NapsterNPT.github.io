@@ -254,7 +254,8 @@ footer {
 }
 
 .card-image  {
-  margin-right: 10px;
+  margin: 10px;
+  margin-left: 0px;
   border: var(--liquid-glass-border);
   border-radius: var(--border-radius)
 }
