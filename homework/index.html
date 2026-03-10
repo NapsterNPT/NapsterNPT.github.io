@@ -103,6 +103,14 @@
     <footer>
         <p>Copyright © 2025 NapsterNPT. All rights reserved.</p>
     </footer>
+
+    <script>
+        (function () {
+            if (sessionStorage.getItem('hw_auth') !== 'true') {
+                window.location.replace('login.html');
+            }
+        })();
+    </script>
 </body>
 
 </html>
