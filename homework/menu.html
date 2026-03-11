@@ -167,6 +167,14 @@
         }
     </script>
 
+    <!-- Login --->
+    <script>
+        (function () {
+            if (sessionStorage.getItem('hw_auth') !== 'true') {
+                window.location.replace('login.html');
+            }
+        })();
+    </script>
 </body>
 
 </html>
