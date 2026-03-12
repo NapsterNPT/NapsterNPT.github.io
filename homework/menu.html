@@ -167,10 +167,8 @@
             const code = document.getElementById("code-block").innerText;
             navigator.clipboard.writeText(code)
         }
-    </script>
-
-    <!-- Login --->
-    <script>
+        
+        //Login
         (function () {
             if (sessionStorage.getItem('hw_auth') !== 'true') {
                 window.location.replace('login.html');
