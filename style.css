@@ -93,6 +93,11 @@ strong {
   font-weight: bold;
 }
 
+.error_msg {
+  color:#ff6b6b;
+  font-size: 13px;
+}
+
 abbr {
   position: absolute;
   top: 0;
@@ -127,7 +132,7 @@ footer {
   border-radius: 100%;
 }
 
-.description {
+.subtitle {
   margin-top: 20px;
   margin-bottom: 5px;
 }
@@ -156,7 +161,7 @@ footer {
   display: grid;
   grid-template-areas:
     "title"
-    "description";
+    "subtitle";
   gap: 5px;
   border-radius: 0 var(--border-radius) 0 0;
   background: var(--liquid-glass-background);
@@ -221,14 +226,25 @@ footer {
 
 /*  Minecraft section  */
 .minecraft-container {
+  background-color: var(--accent-color);
   padding: 50px 0;
 }
 
 /* Login */
+.g_id_signin {
+  width: min-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.login_error_msg{
+  margin-top:15px;
+}
 
 /* Code */
 .second-container {
-  margin: 100px;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
   background: var(--container-color);
   border-radius: var(--border-radius);
