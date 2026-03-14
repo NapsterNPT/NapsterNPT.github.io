@@ -11,6 +11,10 @@
     --code-comment-color: #cacaca80;
     --code-func-color: #ff7085;
   }
+
+  .light {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,6 +28,10 @@
     --code-string-color: #b37400;
     --code-comment-color: #7a7a7a;
     --code-func-color: #c2183a;
+  }
+
+  .dark {
+    display: none;
   }
 }
 
