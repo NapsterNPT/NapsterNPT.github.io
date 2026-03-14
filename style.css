@@ -111,6 +111,8 @@ button {
 
 header {
   margin: 100px 0;
+  display: grid;
+  justify-items: center;
 }
 
 footer {
@@ -126,10 +128,16 @@ footer {
   margin-top: 50px;
 }
 
+.title-img{
+  margin-top: 50px;
+  width: 50%;
+  max-width: 1000px;
+  min-width: 350px;
+}
+
 .logo {
   height: 200px;
   border-radius: 10%;
-  margin: 0 25%;
 }
 
 .subtitle {
