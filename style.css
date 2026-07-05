@@ -1,3 +1,11 @@
+/*  Fonts  */
+@font-face {
+  font-family: 'Lexend';
+  src: url('assets/Lexend.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 :root {
   --background-color: #1e1e1e;
   --text-color: #f3f3f3;
@@ -8,17 +16,7 @@
   --code-string-color: #ffeda1;
   --code-comment-color: #cacaca80;
   --code-func-color: #ff7085;
-}
 
-/*  Fonts  */
-@font-face {
-  font-family: 'Lexend';
-  src: url('assets/Lexend.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-:root {
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h / 0.75);
   --second-text-color: oklch(from var(--text-color) calc(l / 1.1) c h);
   --third-text-color: oklch(from var(--text-color) calc(l / 1.2) c h);
