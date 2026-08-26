@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://napsternpt.github.io/sitemap.xml
