@@ -9,6 +9,7 @@
 :root {
   --background-color: #1e1e1e;
   --text-color: #f3f3f3;
+  --warn-color: #ffab4c;
 
   --accent-color: #569cd6;
 
@@ -98,6 +99,17 @@ footer {
 
 .disabled {
   cursor: not-allowed;
+}
+
+.archived{
+  position: relative;
+  border: 1px solid var(--warn-color) !important;
+}
+
+.archived svg{
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .title {
