@@ -10,6 +10,7 @@
   --background-color: #1e1e1e;
   --text-color: #f3f3f3;
   --warn-color: #ffab4c;
+  --working-on-color: #72ff20;
 
   --accent-color: #569cd6;
 
@@ -106,10 +107,15 @@ footer {
   border: 1px solid var(--warn-color) !important;
 }
 
-.archived svg{
+.working-on{
+  position: relative;
+  border: 1px solid var(--working-on-color) !important;
+}
+
+.archived svg, .working-on svg{
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
 }
 
 .title {
@@ -252,7 +258,7 @@ footer {
 
 /* Code */
 .second-container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
