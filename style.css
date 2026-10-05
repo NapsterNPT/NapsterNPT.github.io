@@ -1,9 +1,7 @@
 /*  Fonts  */
 @font-face {
   font-family: 'Lexend';
-  src: url('assets/Lexend.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
+  src: url('assets/Lexend.ttf');
 }
 
 :root {
@@ -62,12 +60,12 @@ h1, h2 {
   color: var(--text-color);
 }
 
-h3, h4, h5, h6, p, a, label {
+h3, h4, h5, h6, p, label {
   color: var(--second-text-color);
 }
 
-strong {
-  font-weight: bold;
+a {
+  color: var(--accent-color);
 }
 
 .error_msg {
@@ -88,7 +86,7 @@ button {
 }
 
 header {
-  margin: 100px 0;
+  margin-top: 100px;
   display: grid;
   justify-items: center;
 }
@@ -116,6 +114,14 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.bar{
+  width: 90%;
+  height: 2px;
+  background-color: var(--accent-color);
+  opacity: 0.5;
+  margin: 25px auto;
 }
 
 .title {
@@ -148,8 +154,13 @@ footer {
 }
 
 .subtitle {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin: 25px auto;
+  width: 75%;
+}
+
+.github-stats{
+  display: flex;
+  margin: 25px 0;
 }
 
 .main-container {
