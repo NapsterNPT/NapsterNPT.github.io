@@ -195,9 +195,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 75px auto;
   gap: 50px;
-  margin-bottom: 100px;
 }
 
 .content-container h2 {
