@@ -96,6 +96,27 @@ footer {
   margin-bottom: 20px;
 }
 
+.animated {
+  translate: 0;
+  opacity: 1;
+  rotate: 0;
+
+  transition:
+    translate 600ms ease,
+    opacity 600ms ease,
+    rotate 600ms ease;
+
+  transition-delay: 5ms;
+  transition-delay: random(0ms, 200ms);
+
+  @starting-style {
+    translate: 0 50px;
+    translate: 0 random(10px, 60px);
+    opacity: 0;
+    rotate: random(-8deg, 8deg);
+  }
+}
+
 .disabled {
   cursor: not-allowed;
 }
@@ -120,7 +141,7 @@ footer {
   width: 90%;
   height: 2px;
   background-color: var(--accent-color);
-  opacity: 0.5;
+  opacity: 0.5 !important;
   margin: 25px auto;
 }
 
@@ -145,7 +166,7 @@ footer {
   font-size: max(10vw, 2rem);
   letter-spacing: -0.03em;
   color: transparent;
-  -webkit-text-stroke: 1.8px rgba(80, 80, 80, 0.8);
+  -webkit-text-stroke: 1.8px rgba(255, 255, 255, 0.8);
 }
 
 .logo {
