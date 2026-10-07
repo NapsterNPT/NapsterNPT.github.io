@@ -22,6 +22,9 @@
   --border-radius: 20px;
   --second-border-radius: 10px;
 
+  --dooted-background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><rect width="4" height="4" fill="%231e1e1e"/><rect width="1" height="1" fill="%2333384a"/></svg>');
+  --accent-dooted-background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><rect width="4" height="4" fill="%23569cd6aa"/><rect width="1" height="1" fill="%23569cd6"/></svg>');
+
   /*  Liquid glass variables  */
   --liquid-glass-background: rgba(255, 255, 255, 0.1);
   --liquid-glass-background-dark: rgba(10, 10, 10, 0.1);
@@ -37,14 +40,8 @@
 body {
   margin: 0;
   text-align: center;
-  background: var(--background-color);
+  background: var(--dooted-background);
   font-family: 'Lexend';
-}
-
-.body-background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, label{
@@ -164,8 +161,7 @@ footer {
   font-family: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 900;
   font-size: max(10vw, 2rem);
-  letter-spacing: -0.03em;
-  color: transparent;
+  color: #00000050;
   -webkit-text-stroke: 1.8px rgba(255, 255, 255, 0.8);
 }
 
@@ -279,8 +275,11 @@ footer {
 
 /*  Minecraft section  */
 .minecraft-container {
-  background-color: var(--accent-color);
+  width: 80%;
+  margin: 0 auto;
+  background: var(--accent-dooted-background);
   padding: 50px 0;
+  border-radius: var(--border-radius);
 }
 
 /* Login */
@@ -296,18 +295,16 @@ footer {
 
 /* Code */
 .second-container {
-  width: 75%;
-  margin: 0 auto;
+  margin: 0 100px;
 }
 
 .section-title {
-  font-size: 2rem;
   margin-bottom: 50px;
 }
 
 .card-container {
   display: flex;
-  margin: 50px 0;
+  padding: 25px 0;
 }
 
 .card-image  {
