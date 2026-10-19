@@ -8,7 +8,7 @@
   --background-color: #1e1e1e;
   --text-color: #f3f3f3;
   --warn-color: #ffab4c;
-  --working-on-color: #72ff20;
+  --active-color: #72ff20;
 
   --accent-color: #569cd6;
 
@@ -123,12 +123,12 @@ footer {
   border: 1px solid var(--warn-color) !important;
 }
 
-.working-on{
+.active{
   position: relative;
-  border: 1px solid var(--working-on-color) !important;
+  border: 1px solid var(--active-color) !important;
 }
 
-.archived svg, .working-on svg{
+.archived svg, .active svg{
   position: absolute;
   top: 10px;
   right: 10px;
