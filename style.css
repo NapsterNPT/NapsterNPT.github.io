@@ -308,8 +308,7 @@ footer {
 }
 
 .card-image  {
-  margin: 10px;
-  margin-left: 0px;
+  margin: 10px 5px;
   border: var(--liquid-glass-border);
   border-radius: var(--border-radius)
 }
